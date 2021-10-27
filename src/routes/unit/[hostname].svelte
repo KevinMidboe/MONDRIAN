@@ -13,22 +13,20 @@
   export async function load({ page: { params }, fetch }) {
     const { hostname } = params;
 
+    updated = unit?.hostname !== hostname
     unit = getUnitFromHostname(hostname)
 
     return {
       props: {
-        unit
+        unit,
+        updated
       }
     };
   }
 </script>
 
-<script lang="ts">
-  export let unit: IRack;
-</script>
-
 <div>
-  {#if unit}
+  {#if updated || unit}
     <h2>{ unit.hostname }</h2>
 
     {#each JSON.stringify(unit).split(",") as segment}

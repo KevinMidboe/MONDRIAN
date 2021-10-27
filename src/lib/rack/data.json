@@ -1,0 +1,49 @@
+[
+  {
+    "hostname": "switch",
+    "image": "/images/dlink-switch.jpg"
+  },
+  {
+    "hostname": "usg",
+    "image": "/images/usg.png",
+    "admin_address": "https://unifi.schleppe:8443"
+  },
+  {
+    "hostname": "toscadas",
+    "size": 3
+  },
+  {
+    "hostname": "anna",
+    "image": "/images/supermicro-1u.png",
+    "ip_address": "10.0.0.40",
+    "proxmox": true
+  },
+  {
+    "hostname": "pve",
+    "image": "/images/supermicro-2u.png",
+    "ip_address": "10.0.0.60",
+    "proxmox": true
+  },
+  {
+    "hostname": "cerberus",
+    "image": "/images/ibm-x3620.jpeg",
+    "ip_address": "10.0.0.80",
+    "proxmox": true
+  },
+  {
+    "hostname": "ambrosia",
+    "image": "/images/xserve-storage.png",
+    "ip_address": "10.0.0.50",
+    "proxmox": true
+  },
+  {
+    "hostname": "adam",
+    "image": "/images/xserve-compute.png",
+    "admin_address": "vnc://kevin@10.0.0.78",
+    "ip_address": "10.0.0.78"
+  },
+  {
+    "hostname": "third",
+    "image": "/images/apc-ups.png"
+  }
+]
